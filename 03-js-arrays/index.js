@@ -3,7 +3,7 @@
 // What are arrays and how do they allow us to structure our data?
 
 // Define a variable 'pokemon' set to an empty array.
-
+const pokemon = ['']
 // Rewrite the 'pokemon' array with the following elements: 'pikachu', 'bulbasour', 'jigglypuff'
 
 // Elements:
@@ -47,3 +47,35 @@
 // .map()
 
 // Using map, return a new array with all pokemon character names lowercased.
+
+
+const add = (num1, num2) => {
+    return num1 + num2
+}
+
+const multiply = (num1, num2) => {
+    return num1 * num2
+}
+
+const sub = (num1, num2) => {
+    return num1 - num2
+}
+
+// const compute = (fun) => {
+//     return fun
+// }
+// my answers, correct code follows below
+// compute(add(9, 10))
+// compute(sub(8, 3))
+// compute(multiply(3, 4))
+const compute = (cbFun) => {
+    cbFun(6, 10)
+}
+
+compute(add)
+//9
+compute(sub)
+//3
+compute(multiply)
+//18
+// the above is passing function deinition
